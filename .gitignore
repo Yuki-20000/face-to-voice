@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+
+# Virtual Environment
+.venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Data files (large datasets)
+data/vggface2/
+data/voxceleb2/
+
+# IDE
+.vscode/

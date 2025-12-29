@@ -1,0 +1,48 @@
+# --- Hugging Face / Deployment ---
+huggingface-hub==0.19.4 
+transformers==4.37.2
+
+# --- PyTorch Repository (CPU Mode) ---
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+# --- Core Dependencies ---
+numpy==1.26.4
+pandas==2.2.3
+scikit-learn==1.5.2
+scipy==1.15.3
+
+# --- Deep Learning Frameworks ---
+# TensorFlow (for DeepFace)
+tensorflow==2.15.0; sys_platform != "darwin"
+tensorflow-intel==2.15.0; sys_platform == "win32"
+tf-keras==2.15.0
+
+# PyTorch (for StyleTTS2)
+torch==2.4.1+cpu
+torchaudio==2.4.1+cpu
+
+# --- Computer Vision (DeepFace) ---
+deepface==0.0.96
+opencv-python==4.11.0.86
+retina-face==0.0.17
+mtcnn==1.0.0
+
+# --- Text-to-Speech (StyleTTS2) ---
+styletts2==0.1.6
+phonemizer==3.2.1
+librosa==0.10.2
+soundfile==0.12.1
+
+# --- Web Application ---
+streamlit==1.52.1
+pillow==11.3.0
+
+# --- Utilities ---
+better-profanity==0.7.0
+tqdm==4.67.1
+nltk==3.9.2
+
+# --- Development/Analysis (Notebooks) ---
+matplotlib==3.9.2
+seaborn==0.13.2
+moviepy==2.2.1
