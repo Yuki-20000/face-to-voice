@@ -27,5 +27,9 @@ RUN chmod -R 777 /app
 # Expose Port
 EXPOSE 7860
 
-# Run Streamlit. 
-CMD ["streamlit", "run", "src/app.py", "--server.port=7860", "--server.address=0.0.0.0"]
+# Run Streamlit
+CMD ["streamlit", "run", "src/app.py", \
+    "--server.port=7860", \
+    "--server.address=0.0.0.0", \
+    "--server.enableCORS=false", \
+    "--server.enableXsrfProtection=false"]
