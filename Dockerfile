@@ -17,6 +17,7 @@ COPY requirements.txt .
 
 # Install Python packages. 
 RUN pip install --no-cache-dir -r requirements.txt
+RUN python -m nltk.downloader punkt_tab
 
 # Copy Application Code
 COPY . .
